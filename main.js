@@ -41,4 +41,10 @@ convertir.addEventListener('click', () => {
   }
 });
 
+reset.addEventListener('click', () => {
+  temperatura.value = '';
+  resultado.textContent = '';
+  marcador.textContent = '';
+  marcador.style.height = '0%';
+});
 // Language: javascript
