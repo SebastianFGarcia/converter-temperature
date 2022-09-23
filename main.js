@@ -3,6 +3,7 @@ const temperatura = document.getElementById('temperatura');
 const tempError = document.getElementById('tempError');
 const termometro = document.getElementById('termometro');
 const marcador = document.getElementById('marcador');
+const reset = document.getElementById('reset');
 var confirmacion = false;
 temperatura.addEventListener('input', () => {
   if(temperatura.value < 32) {
@@ -40,4 +41,10 @@ convertir.addEventListener('click', () => {
   }
 });
 
+reset.addEventListener('click', () => {
+  temperatura.value = '';
+  resultado.textContent = '';
+  marcador.textContent = '';
+  marcador.style.height = '0%';
+});
 // Language: javascript
